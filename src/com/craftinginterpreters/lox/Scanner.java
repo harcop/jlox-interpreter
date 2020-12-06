@@ -1,13 +1,9 @@
-package com.toluwap.creaftinginterpreters.lox;
-
-import com.toluwap.creaftinginterpreters.Lox;
+package com.craftinginterpreters.lox;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-import static com.toluwap.creaftinginterpreters.lox.TokenType.*;
+import static com.craftinginterpreters.lox.TokenType.*;
 
 class Scanner {
     private final String source;
