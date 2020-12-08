@@ -33,8 +33,9 @@ public class Lox {
         BufferedReader reader = new BufferedReader(input);
 
         for (; ; ) {
-            System.out.print("> ");
+            System.out.print("toluwap> ");
             String line = reader.readLine();
+//            System.out.println(line + "Hacker");
             if (line == null) break;
             run(line);
             hadError = false;
