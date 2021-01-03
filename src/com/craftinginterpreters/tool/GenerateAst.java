@@ -1,4 +1,4 @@
-package tool;
+package com.craftinginterpreters.tool;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -7,11 +7,13 @@ import java.util.List;
 
 public class GenerateAst {
     public static void main(String[] args) throws IOException {
-        if (args.length != 1) {
+        if (args.length == 1) {
+            System.out.println(args.length + " this is the shit");
             System.err.println("Usage: generate_ast <output directory>");
             System.exit(64);
         }
-        String outputDir = args[0];
+//        String outputDir = args[0];
+        String outputDir = "/Users/sirflex/Documents/Lox/src/com/craftinginterpreters/lox";
         defineAst(outputDir, "Expr", Arrays.asList(
                 "Binary   : Expr left, Token operator, Expr right",
                 "Grouping : Expr expression",
