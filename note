@@ -1,0 +1,9 @@
+visitor pattern
+this pattern I would like to call "pick your own pattern".
+The pattern illustrate how we can separate a functionality from a class
+and still maintain flexibility.
+The main element which is the class object will have a method
+called accept(v visitor) which will accept the visitor interface
+and then pick its own function from the child class that implements
+the visitor interface
+sourceLink: https://refactoring.guru/design-patterns/visitor
